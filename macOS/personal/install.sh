@@ -1,6 +1,8 @@
 #! /bin/bash
 clear
 
+sudo xcodebuild -license accept
+
 # display all hidden/visible files in finder
 echo -e "setting finder to show all hidden files\n"
 defaults write com.apple.finder AppleShowAllFiles Yes
