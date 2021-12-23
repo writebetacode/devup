@@ -20,9 +20,10 @@
 
 1. open a terminal and run the following commands
     - ```xcode-select --install```
-    - ```./install.sh```
+    - ```bash install.sh```
     - ```ssh-keygen -t ed25519 -C "scholle.mv@protonmail.com"```
         - ```cat ~/.ssh/id_ed25519.pub | pbcopy```
+	- ```ssh-add --apple-use-keychain ~/.ssh/id_ed25519```
     - ```gpg --full-generate-key```
         - ```gpg --list-secret-keys --keyid-format=long```
         - ```gpg --armor --export #KEY | pbcopy```
