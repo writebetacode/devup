@@ -13,6 +13,12 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 echo -e "installing home brew\n"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo -e "moving all of the pre-configured files to their correct locations"
+mv root/.* ~/
+
+source ~/.zprofile
+source ~/.zshrc
+
 # installing programs with brew
 echo -e "installing programs with brew\n"
 # docker-compose
@@ -48,7 +54,3 @@ flutter config --no-analytics
 
 echo -e "grabbing the command line utility that will enable me to upgrade go mod dependencies\n"
 go install github.com/oligot/go-mod-upgrade@latest
-
-echo -e "moving all of the pre-configured files to their correct locations"
-mv ./root/.zprofile ~/.zprofile
-mv ./root/.zshrc ~/.zshrc
