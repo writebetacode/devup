@@ -41,7 +41,7 @@ brew install --cask google-chrome
 brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask beekeeper-studio
-brew install --cask postman
+brew install --cask insomnia
 brew install --cask signal
 brew install --cask flutter
 brew install --cask android-studio

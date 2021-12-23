@@ -10,7 +10,6 @@
 1. Install the following apps from the Pop_Shop
     - Bitwarden
     - VS Code
-    - Postman
     - Spotify
     - Signal
     - Android Studio
