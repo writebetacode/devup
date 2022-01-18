@@ -13,7 +13,6 @@
     - Bitwarden
     - NextDNS
     - BetterSnapTool
-    - GIPHY Capture
     - Xcode
 
 ### Run the install script
