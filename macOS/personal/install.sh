@@ -47,6 +47,7 @@ brew install --cask flutter
 brew install --cask android-studio
 brew install --cask spotify
 brew install --cask gpg-suite
+brew install --cask logseq
 
 echo -e "creating the ~/.nvm folder\n"
 mkdir ~/.nvm
