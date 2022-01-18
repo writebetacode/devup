@@ -15,6 +15,13 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 echo -e "installing home brew\n"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# install oh-my-zsh
+echo -e "installing Oh-My-Zsh!\n"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo -e "removing the backup .zshrc file\n"
+rm -f ~/.zshrc.pre-oh-my-zsh
+
 echo -e "moving all of the pre-configured files to their correct locations"
 mv root/.* ~/
 
