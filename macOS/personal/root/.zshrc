@@ -111,4 +111,4 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(direnv hook zsh)"
 
 # adding my ssh key so that it preloads into the terminal
-ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+# ssh-add --apple-use-keychain ~/.ssh/id_ed25519
