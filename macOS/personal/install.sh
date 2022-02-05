@@ -30,25 +30,25 @@ source ~/.zshrc
 
 # installing programs with brew
 echo -e "installing programs with brew\n"
-# docker-compose
+# direnv \ rbenv \ nodenv \ asdf
+# echo -e "creating the ~/.nvm folder\n"
+# mkdir ~/.nvm
 brew install \
     git \
     go \
-    nvm \
-    clang-format \
     protobuf \
+    protoc-gen-go \
     golangci-lint \
     cocoapods \
-    neovim \
-    direnv
+    neovim 
 
 brew install --cask kitty
 brew install --cask brave-browser
 brew install --cask google-chrome
 brew install --cask docker
 brew install --cask visual-studio-code
-brew install --cask beekeeper-studio
-brew install --cask insomnia
+brew install --cask tableplus
+brew install --cask postman
 brew install --cask signal
 brew install --cask flutter
 brew install --cask android-studio
@@ -57,11 +57,11 @@ brew install --cask gpg-suite
 brew install --cask logseq
 brew install --cask loom
 
-echo -e "creating the ~/.nvm folder\n"
-mkdir ~/.nvm
-
 echo -e "telling flutter to not collect information for the use of the tool...\n"
 flutter config --no-analytics
 
 echo -e "grabbing the command line utility that will enable me to upgrade go mod dependencies\n"
+# TODO: add in an alias to do this command
+# TODO: add in an alias for running `go get -u all` for a different type of updating modules
+# TODO: add in a way to update this and all of the packages I install via go vs brew
 go install github.com/oligot/go-mod-upgrade@latest
