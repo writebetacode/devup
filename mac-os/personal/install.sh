@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/zsh
 clear
 
 sudo xcodebuild -license accept
@@ -41,6 +41,7 @@ brew install \
 brew install --cask kitty
 brew install --cask brave-browser
 brew install --cask google-chrome
+brew install --cask microsoft-edge
 brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask tableplus
@@ -49,10 +50,6 @@ brew install --cask spotify
 brew install --cask gpg-suite
 brew install --cask logseq
 brew install --cask loom
-brew install --cask microsoft-edge
-
-echo -e "telling flutter to not collect information for the use of the tool...\n"
-flutter config --no-analytics
 
 echo -e "grabbing the command line utility that will enable me to upgrade go mod dependencies\n"
 # TODO: add in an alias to do this command
