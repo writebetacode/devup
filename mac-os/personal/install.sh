@@ -5,7 +5,7 @@ sudo xcodebuild -license accept
 
 # display all hidden/visible files in finder
 echo -e "setting finder to show all hidden files\n"
-defaults write com.apple.finder AppleShowAllFiles Yes
+defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder
 
 # settings up defaults for better fuzzy text support
 echo -e "setting up non-fuzzy text for mojave\n"
@@ -15,15 +15,11 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 echo -e "installing home brew\n"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# install oh-my-zsh
-echo -e "installing Oh-My-Zsh!\n"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 echo -e "removing the backup .zshrc file\n"
 rm -f ~/.zshrc.pre-oh-my-zsh
 
 echo -e "moving all of the pre-configured files to their correct locations"
-mv root/.* ~/
+cp -r root/. ~/
 
 source ~/.zprofile
 source ~/.zshrc
@@ -49,13 +45,11 @@ brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask tableplus
 brew install --cask postman
-brew install --cask signal
-brew install --cask flutter
-brew install --cask android-studio
 brew install --cask spotify
 brew install --cask gpg-suite
 brew install --cask logseq
 brew install --cask loom
+brew install --cask microsoft-edge
 
 echo -e "telling flutter to not collect information for the use of the tool...\n"
 flutter config --no-analytics

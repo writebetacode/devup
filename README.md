@@ -4,5 +4,5 @@ When you just need to reboot and reset your development environment.
 
 ## Table of contents
 
-- [MacOS](./macOS/README.md)
-- [PoPOS](./popOS/README.md)
+- [mac-os](./mac-os/README.md)
+- [pop-os](./pop-os/README.md)
