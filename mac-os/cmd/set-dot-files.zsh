@@ -8,7 +8,7 @@ fi
 
 declare -A dot_files
 
-dot_files[config/kitty]=.config/kitty
+dot_files[.config/kitty]=.config/kitty
 dot_files[.gitignore]=.gitignore
 dot_files[.zshrc]=.zshrc
 dot_files[.zsh_local_plugins]=.zsh_local_plugins

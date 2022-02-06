@@ -26,3 +26,6 @@
     - ```gpg --full-generate-key```
       - ```gpg --list-secret-keys --keyid-format=long```
       - ```gpg --armor --export #KEY | pbcopy```
+
+1. open the fonts folder within this repo and double click the fonts to add them
+   to the system, making them available to all applications.
