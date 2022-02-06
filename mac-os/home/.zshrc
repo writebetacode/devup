@@ -1,6 +1,9 @@
 # setting up brew so that it is loaded for our current environment
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# setting up fzf completions
+[ -f ~/.zsh_local_plugins/fzf.zsh ] && source ~/.zsh_local_plugins/fzf.zsh
+
 # setting up direnv so that it loads my configs when I enter and exit directories
 # eval "$(direnv hook zsh)"
 

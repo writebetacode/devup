@@ -1,16 +1,3 @@
-[user]
-        name = writebetacode
-        email = scholle.mv@protonmail.com
-        signingkey = 9169087098F5532E
-[commit]
-        gpgsign = true
-[pull]
-        rebase = true
-[init]
-        defaultBranch = main
-[url "git@gitlab.com:"]
-        insteadOf = https://gitlab.com/
-[url "git@github.com:"]
-        insteadOf = https://github.com/
-[core]
-	excludesfile = /Users/wbc/.gitignore
+.DS_Store
+
+node_modules

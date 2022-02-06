@@ -6,33 +6,22 @@ if [ ! -d "$HOME/.config" ]; then
   mkdir ~/.config
 fi
 
-function set_symlink(){
-  echo "creating symlink: $1 -> $2"
-  ln -s $1 $2
-}
-
 declare -A dot_files
 
-dot_files[kitty]=.config/
+dot_files[config/kitty]=.config/kitty
 dot_files[.gitignore]=.gitignore
 dot_files[.zshrc]=.zshrc
+dot_files[.zsh_local_plugins]=.zsh_local_plugins
 
 for from to in ${(kv)dot_files}; do
   to_path=~/$to
+  from_path=$HOME_WD/$from
 
-  if [ -d $to_path ]; then
-    from_path=$HOME_WD/$to$from
-  else
-    from_path=$HOME_WD/$from
-  fi
-
-  if [ -d $to_path ]; then
-    if [ ! -d $to_path$from ]; then
-      set_symlink $from_path $to_path
-    fi
-  else
-    if [ ! -f $to_path ]; then
-      set_symlink $from_path $to_path
-    fi
+  # if symlink does not exist, then we will create it.
+  if [ ! -L $to_path ]; then
+    echo "creating symlink: $from_path -> $to_path"
+    ln -s $from_path $to_path
   fi
 done
+
+source ~/.zshrc

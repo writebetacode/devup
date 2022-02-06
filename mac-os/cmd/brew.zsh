@@ -17,7 +17,8 @@ brew install \
   protoc-gen-go \
   golangci-lint \
   cocoapods \
-  neovim
+  neovim \
+  fzf
 
 brew install --cask kitty \
   brave-browser \
@@ -31,3 +32,8 @@ brew install --cask kitty \
   gpg-suite \
   logseq \
   loom
+
+# adding in any configuration required after installing one of the brew pkgs
+
+# install useful key bindings and fuzzy completion for fzf
+$(brew --prefix)/opt/fzf/install
