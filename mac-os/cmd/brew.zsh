@@ -1,4 +1,4 @@
-#! /bin/zsh
+#!/bin/zsh
 
 echo -e "installing Homebrew\n"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

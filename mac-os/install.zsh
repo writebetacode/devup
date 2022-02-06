@@ -1,4 +1,4 @@
-#! /bin/zsh
+#!/bin/zsh
 clear
 
 zsh -c cmd/mac-os-defaults.zsh

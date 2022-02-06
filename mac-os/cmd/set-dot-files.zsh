@@ -1,4 +1,4 @@
-#! /bin/zsh
+#!/bin/zsh
 
 HOME_WD="$(dirname "$(pwd)")/home"
 
@@ -15,7 +15,6 @@ declare -A dot_files
 
 dot_files[kitty]=.config/
 dot_files[.gitignore]=.gitignore
-dot_files[.zprofile]=.zprofile
 dot_files[.zshrc]=.zshrc
 
 for from to in ${(kv)dot_files}; do

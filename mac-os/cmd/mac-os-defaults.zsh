@@ -1,4 +1,4 @@
-#! /bin/zsh
+#!/bin/zsh
 
 echo -e "accepting xcodebuild license\n"
 sudo xcodebuild -license accept

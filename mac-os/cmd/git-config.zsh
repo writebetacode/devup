@@ -1,4 +1,4 @@
-#! /bin/zsh
+#!/bin/zsh
 
 GIT_CONFIG_PATH=$HOME/.gitconfig
 EPOCHSECONDS=$(date +"%s")
