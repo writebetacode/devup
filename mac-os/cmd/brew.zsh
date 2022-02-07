@@ -19,7 +19,8 @@ brew install \
   neovim \
   fzf \
   romkatv/powerlevel10k/powerlevel10k \
-  zsh-completions
+  zsh-completions \
+  zsh-autosuggestions
 
 brew install --cask kitty \
   brave-browser \
