@@ -10,8 +10,10 @@ declare -A dot_files
 
 dot_files[.zsh_local_plugins]=.zsh_local_plugins
 dot_files[.config/kitty]=.config/kitty
+dot_files[.config/direnv]=.config/direnv
 dot_files[.gitignore]=.gitignore
 dot_files[.zshrc]=.zshrc
+dot_files[.ssh/config]=.ssh/config
 
 for from to in ${(kv)dot_files}; do
   to_path=~/$to

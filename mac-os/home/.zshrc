@@ -26,13 +26,11 @@ rm -f ~/.zcompdump; compinit
 # setting up zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# setting up asdf to be usable in my terminal sessions
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+# Hook direnv into your shell.
+eval "$(asdf exec direnv hook zsh)"
 
-
-
-# TODO: figure out if I still need the following
-# setting up direnv so that it loads my configs when I enter and exit directories
-# eval "$(direnv hook zsh)"
-
-# adding my ssh key so that it preloads into the terminal
-# ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+# A shortcut for asdf managed direnv.
+direnv() { asdf exec direnv "$@"; }

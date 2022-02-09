@@ -6,9 +6,6 @@ echo -e "installing Homebrew\n"
 source ~/.zshrc
 
 echo -e "installing programs with brew\n"
-# direnv \ rbenv \ nodenv \ asdf
-# echo -e "creating the ~/.nvm folder\n"
-# mkdir ~/.nvm
 brew install \
   git \
   go \
@@ -20,7 +17,8 @@ brew install \
   fzf \
   romkatv/powerlevel10k/powerlevel10k \
   zsh-completions \
-  zsh-autosuggestions
+  zsh-autosuggestions \
+  asdf
 
 brew install --cask kitty \
   brave-browser \
@@ -45,3 +43,12 @@ $(brew --prefix)/opt/fzf/install
 # because it was using a non-standard group name.
 sudo chmod -R 755 /opt/homebrew/share
 sudo chown -R "$USER":staff /opt/homebrew/share
+
+# setting up the plugins I use for asdf
+asdf plugin add direnv
+asdf install direnv latest
+asdf global direnv latest
+
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf install nodejs latest
+asdf global nodejs latest
