@@ -34,3 +34,12 @@ eval "$(asdf exec direnv hook zsh)"
 
 # A shortcut for asdf managed direnv.
 direnv() { asdf exec direnv "$@"; }
+
+# add in go bin into path
+export GOBIN=$HOME/go/bin
+if [ -d $GOBIN ]; then
+  export PATH=$PATH:$GOBIN
+fi
+
+# adding in all of my aliases
+source ~/.zsh_local_plugins/aliases.zsh

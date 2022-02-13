@@ -52,3 +52,6 @@ asdf global direnv latest
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf install nodejs latest
 asdf global nodejs latest
+
+# running commands that will install packages after we brew install the language
+upgrade-go-bins
