@@ -30,6 +30,7 @@ alias install-asdf-plugins="install-asdf-plugins"
 # node globals
 function install-node-globals {
   echo "installing node globals"
+  corepack enable
 
   if [ ! -d "$HOME/.asdf/shims/pnpm" ]; then
     npx pnpm add -g pnpm
