@@ -49,3 +49,4 @@ sudo chown -R "$USER":staff /opt/homebrew/share
 # running commands that will install packages after we brew install the language
 install-go-bins
 install-asdf-plugins
+install-node-globals

@@ -26,3 +26,18 @@ function install-asdf-plugins {
 }
 
 alias install-asdf-plugins="install-asdf-plugins"
+
+# node globals
+function install-node-globals {
+  echo "installing node globals"
+
+  if [ ! -d "$HOME/.asdf/shims/pnpm" ]; then
+    npx pnpm add -g pnpm
+  else
+    # updating pnpm
+    pnpm add -g pnpm
+  fi
+}
+
+alias install-node-globals="install-node-globals"
+alias npm="pnpm"
