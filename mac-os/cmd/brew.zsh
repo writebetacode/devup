@@ -35,6 +35,8 @@ brew install --cask kitty \
 
 # adding in any configuration required after installing one of the brew pkgs
 
+source ~/.zshrc
+
 # install useful key bindings and fuzzy completion for fzf
 $(brew --prefix)/opt/fzf/install
 
@@ -44,14 +46,6 @@ $(brew --prefix)/opt/fzf/install
 sudo chmod -R 755 /opt/homebrew/share
 sudo chown -R "$USER":staff /opt/homebrew/share
 
-# setting up the plugins I use for asdf
-asdf plugin add direnv
-asdf install direnv latest
-asdf global direnv latest
-
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf install nodejs latest
-asdf global nodejs latest
-
 # running commands that will install packages after we brew install the language
-upgrade-go-bins
+install-go-bins
+install-asdf-plugins
