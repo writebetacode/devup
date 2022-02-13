@@ -42,3 +42,7 @@ function install-node-globals {
 
 alias install-node-globals="install-node-globals"
 alias npm="pnpm"
+
+# zsh globals
+alias ls='gls --color=auto'
+alias ll='ls -alh'
