@@ -18,10 +18,14 @@ source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 [ -f ~/.zsh_local_plugins/fzf.zsh ] && source ~/.zsh_local_plugins/fzf.zsh
 
 # setting up zshrc-completions
-FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-autoload -Uz compinit
-rm -f ~/.zcompdump; compinit
+  autoload -Uz compinit
+  rm -f ~/.zcompdump; compinit
+fi
 
 # setting up zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
