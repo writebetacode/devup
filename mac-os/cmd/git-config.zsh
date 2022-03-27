@@ -37,10 +37,10 @@ cat << CONFIG_FILE_TEXT >> $GIT_CONFIG_PATH
         st = status
         br = branch
         brl = branch --list
-        gwta = worktree add
-        gwtab = worktree add -b
-        gwtl = worktree list
-        gwtp = worktree prune
-        gwtr = worktree remove
+        wta = worktree add
+        wtab = worktree add -b
+        wtl = worktree list
+        wtp = worktree prune
+        wtr = worktree remove
 
 CONFIG_FILE_TEXT
