@@ -30,8 +30,7 @@ brew install --cask kitty \
   postman \
   spotify \
   gpg-suite \
-  logseq \
-  loom
+  logseq
 
 # adding in any configuration required after installing one of the brew pkgs
 
