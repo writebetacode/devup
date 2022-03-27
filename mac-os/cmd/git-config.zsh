@@ -33,6 +33,7 @@ cat << CONFIG_FILE_TEXT >> $GIT_CONFIG_PATH
         excludesfile = ~/.gitignore
 [alias]
         co = checkout
+        cm = commit -m
         st = status
         br = branch
         brl = branch --list

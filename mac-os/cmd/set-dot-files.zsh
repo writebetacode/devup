@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-HOME_WD="$(dirname "$(pwd)")/home"
+HOME_WD="$(pwd)/home"
 
 if [ ! -d "$HOME/.config" ]; then
   mkdir ~/.config
