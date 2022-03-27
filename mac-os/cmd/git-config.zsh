@@ -30,6 +30,16 @@ cat << CONFIG_FILE_TEXT >> $GIT_CONFIG_PATH
 [url "git@github.com:"]
         insteadOf = https://github.com/
 [core]
-  excludesfile = ~/.gitignore
+        excludesfile = ~/.gitignore
+[alias]
+        co = checkout
+        st = status
+        br = branch
+        brl = branch --list
+        gwta = worktree add
+        gwtab = worktree add -b
+        gwtl = worktree list
+        gwtp = worktree prune
+        gwtr = worktree remove
 
 CONFIG_FILE_TEXT
