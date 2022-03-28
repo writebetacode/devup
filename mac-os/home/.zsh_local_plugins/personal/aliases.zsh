@@ -46,3 +46,5 @@ alias npm="pnpm"
 # zsh globals
 alias ls='gls --color=auto'
 alias ll='ls -alh'
+alias vim='nvim'
+alias vi='nvim'
