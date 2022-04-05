@@ -1,3 +1,6 @@
 source "$(asdf direnv hook asdf)"
 
 use asdf
+
+[global]
+load_dotenv = true
