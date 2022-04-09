@@ -23,6 +23,7 @@
       - ```cat ~/.ssh/id_ed25519.pub | pbcopy```
       - ```ssh-add --apple-use-keychain ~/.ssh/id_ed25519```
     - ```mkdir -p ~/code/writebetacode && cd ~/code/writebetacode && git clone --bare git@github.com:writebetacode/devup.git devup```
+    - run the installer script
     - ```gpg --full-generate-key```
       - ```gpg --list-secret-keys --keyid-format=long```
       - ```gpg --armor --export #KEY | pbcopy```
