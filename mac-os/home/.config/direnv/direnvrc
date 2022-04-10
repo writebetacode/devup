@@ -1,6 +1,3 @@
-source "$(asdf direnv hook asdf)"
+source "$(asdf direnv hook zsh)"
 
 use asdf
-
-[global]
-load_dotenv = true
