@@ -31,7 +31,8 @@ brew install --cask kitty \
   spotify \
   gpg-suite \
   logseq \
-  signal
+  signal \
+  warp
 
 # adding in any configuration required after installing one of the brew pkgs
 
