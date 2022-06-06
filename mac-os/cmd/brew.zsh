@@ -14,10 +14,6 @@ brew install \
   golangci-lint \
   cocoapods \
   neovim \
-  fzf \
-  romkatv/powerlevel10k/powerlevel10k \
-  zsh-completions \
-  zsh-autosuggestions \
   asdf
 
 brew install --cask brave-browser \
