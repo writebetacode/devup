@@ -20,8 +20,7 @@ brew install \
   zsh-autosuggestions \
   asdf
 
-brew install --cask kitty \
-  brave-browser \
+brew install --cask brave-browser \
   google-chrome \
   microsoft-edge \
   docker \
