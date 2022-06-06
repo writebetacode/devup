@@ -33,9 +33,6 @@ brew install --cask brave-browser \
 
 source ~/.zshrc
 
-# install useful key bindings and fuzzy completion for fzf
-$(brew --prefix)/opt/fzf/install
-
 # changing ownership of the /opt/brew/share directory and files therein so that
 # zsh-compaudit does not complain that the directories are insecure, most likely
 # because it was using a non-standard group name.
