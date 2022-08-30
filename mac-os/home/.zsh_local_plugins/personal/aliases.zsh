@@ -32,16 +32,16 @@ function install-node-globals {
   echo "installing node globals"
   corepack enable
 
-  if [ ! -d "$HOME/.asdf/shims/pnpm" ]; then
-    npx pnpm add -g pnpm
-  else
-    # updating pnpm
-    pnpm add -g pnpm
-  fi
+  # TODO: figure out how to utilize pnpm correctly or just scrap this idea
+  # if [ ! -d "$HOME/.asdf/shims/pnpm" ]; then
+  #   npx pnpm add -g pnpm
+  # else
+  #   # updating pnpm
+  #   pnpm add -g pnpm
+  # fi
 }
 
 alias install-node-globals="install-node-globals"
-alias npm="pnpm"
 
 # zsh globals
 alias ls='gls --color=auto'
