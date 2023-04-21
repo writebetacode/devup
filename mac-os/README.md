@@ -19,10 +19,10 @@
 
 1. open a terminal and run the following commands
     - ```xcode-select --install```
-    - ```ssh-keygen -t ed25519 -C "scholle.mv@protonmail.com"```
+    - ```ssh-keygen -t ed25519 -C "<email_for_git>"```
       - ```cat ~/.ssh/id_ed25519.pub | pbcopy```
       - ```ssh-add --apple-use-keychain ~/.ssh/id_ed25519```
-    - ```mkdir -p ~/code/writebetacode && cd ~/code/writebetacode && git clone --bare git@github.com:writebetacode/devup.git devup```
+    - ```mkdir -p ~/code/ && cd ~/code/ && git clone --bare git@github.com:writebetacode/devup.git dotfiles```
     - run the installer script
     - ```gpg --full-generate-key```
       - ```gpg --list-secret-keys --keyid-format=long```
