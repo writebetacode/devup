@@ -14,7 +14,8 @@ brew install \
   golangci-lint \
   cocoapods \
   neovim \
-  asdf
+  asdf \
+  mas
 
 brew install --cask brave-browser \
   google-chrome \
