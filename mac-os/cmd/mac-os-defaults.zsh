@@ -13,7 +13,7 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder
 echo -e "setting Finder to show all File extensions\n"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-echo -e "setting Finder to show the path par\n"
+echo -e "setting Finder to show the path bar\n"
 defaults write com.apple.finder ShowPathbar -bool true
 
 echo -e "setting Finder to show a status bar\n"
