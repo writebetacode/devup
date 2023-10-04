@@ -8,7 +8,8 @@ fi
 
 
 # add in go bin into path
-export GOBIN=$HOME/go/bin
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 if [ -d $GOBIN ]; then
   export PATH=$PATH:$GOBIN
 fi
