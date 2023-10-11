@@ -3,7 +3,10 @@
 echo -e "accepting xcodebuild license\n"
 sudo xcodebuild -license accept
 
-# TODO: come back and see if this matters anymore with my upgraded monitors 
+echo -e "installing rosetta so that docker can use it\n"
+softwareupdate --install-rosetta
+
+# TODO: come back and see if this matters anymore with my upgraded monitors
 echo -e "setting up non-fuzzy text for mojave\n"
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 
